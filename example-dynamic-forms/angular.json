@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "example-dynamic-forms:build:production"
+              "buildTarget": "example-dynamic-forms:build:production"
             },
             "development": {
-              "browserTarget": "example-dynamic-forms:build:development"
+              "buildTarget": "example-dynamic-forms:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "example-dynamic-forms:build"
+            "buildTarget": "example-dynamic-forms:build"
           }
         },
         "test": {
