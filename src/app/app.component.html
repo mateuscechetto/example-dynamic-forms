@@ -1,0 +1,15 @@
+<div style="display: flex; flex-direction: column">
+  <select
+    name="forms"
+    id="forms"
+    [(ngModel)]="selected"
+    (ngModelChange)="onChangeOption($event)"
+  >
+    @for(form of options; track form.id) {
+    <option value="{{ form.id }}">{{ form.id }}</option>
+    }
+  </select>
+  <ng-container #container></ng-container>
+</div>
+
+<button (click)="onSave()">Save</button>
